@@ -16,7 +16,7 @@ namespace BusReservtionSysWindowsForm
         {
             InitializeComponent();
         }
-        bool customerPage=false;
+        //bool customerPage=true;
         private void NewCustomerForm_Shown(object sender, EventArgs e)
         {
             //this.WindowState = FormWindowState.Maximized;
@@ -41,10 +41,21 @@ namespace BusReservtionSysWindowsForm
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (customerPage)
-            {
+            //if (customerPage)
+            //{
                 //progressBar1
                 tabControl1.SelectedTab = tabPage2;
+            //}
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Are you sure you want to cancel ? ", "Cancel", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                MessageBox.Show("Booking was cancelled");
+                this.Hide();
+                MainForm main = new MainForm();
+                main.Show();
             }
         }
     }
