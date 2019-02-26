@@ -30,8 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pnlHeading = new System.Windows.Forms.Panel();
+            this.picEditAgent = new System.Windows.Forms.PictureBox();
+            this.lblAgentId = new System.Windows.Forms.Label();
+            this.lblAgentUsername = new System.Windows.Forms.Label();
+            this.picAgent = new System.Windows.Forms.PictureBox();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlNavigation = new System.Windows.Forms.Panel();
+            this.picExit = new System.Windows.Forms.PictureBox();
+            this.lblManageRental = new System.Windows.Forms.Label();
+            this.picMnageRental = new System.Windows.Forms.PictureBox();
+            this.lblManageTicket = new System.Windows.Forms.Label();
+            this.picManageTicket = new System.Windows.Forms.PictureBox();
             this.btnReservationReport = new System.Windows.Forms.Button();
             this.btnCancelReservation = new System.Windows.Forms.Button();
             this.btnReserve = new System.Windows.Forms.Button();
@@ -39,24 +48,15 @@
             this.bntNewCustomer = new System.Windows.Forms.Button();
             this.pnlNotification = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.picAgent = new System.Windows.Forms.PictureBox();
-            this.lblAgentUsername = new System.Windows.Forms.Label();
-            this.lblAgentId = new System.Windows.Forms.Label();
-            this.picEditAgent = new System.Windows.Forms.PictureBox();
-            this.picManageTicket = new System.Windows.Forms.PictureBox();
-            this.lblManageTicket = new System.Windows.Forms.Label();
-            this.picMnageRental = new System.Windows.Forms.PictureBox();
-            this.lblManageRental = new System.Windows.Forms.Label();
-            this.picExit = new System.Windows.Forms.PictureBox();
             this.pnlHeading.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picEditAgent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAgent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlNavigation.SuspendLayout();
-            this.pnlNotification.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAgent)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEditAgent)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picManageTicket)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMnageRental)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMnageRental)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picManageTicket)).BeginInit();
+            this.pnlNotification.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlHeading
@@ -71,6 +71,44 @@
             this.pnlHeading.Name = "pnlHeading";
             this.pnlHeading.Size = new System.Drawing.Size(793, 86);
             this.pnlHeading.TabIndex = 0;
+            // 
+            // picEditAgent
+            // 
+            this.picEditAgent.Image = ((System.Drawing.Image)(resources.GetObject("picEditAgent.Image")));
+            this.picEditAgent.Location = new System.Drawing.Point(112, 62);
+            this.picEditAgent.Name = "picEditAgent";
+            this.picEditAgent.Size = new System.Drawing.Size(59, 21);
+            this.picEditAgent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picEditAgent.TabIndex = 4;
+            this.picEditAgent.TabStop = false;
+            // 
+            // lblAgentId
+            // 
+            this.lblAgentId.AutoSize = true;
+            this.lblAgentId.Location = new System.Drawing.Point(109, 18);
+            this.lblAgentId.Name = "lblAgentId";
+            this.lblAgentId.Size = new System.Drawing.Size(54, 13);
+            this.lblAgentId.TabIndex = 3;
+            this.lblAgentId.Text = "lblAgentId";
+            // 
+            // lblAgentUsername
+            // 
+            this.lblAgentUsername.AutoSize = true;
+            this.lblAgentUsername.Location = new System.Drawing.Point(109, 5);
+            this.lblAgentUsername.Name = "lblAgentUsername";
+            this.lblAgentUsername.Size = new System.Drawing.Size(93, 13);
+            this.lblAgentUsername.TabIndex = 2;
+            this.lblAgentUsername.Text = "lblAgentUsername";
+            // 
+            // picAgent
+            // 
+            this.picAgent.Image = ((System.Drawing.Image)(resources.GetObject("picAgent.Image")));
+            this.picAgent.Location = new System.Drawing.Point(3, 3);
+            this.picAgent.Name = "picAgent";
+            this.picAgent.Size = new System.Drawing.Size(100, 80);
+            this.picAgent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAgent.TabIndex = 1;
+            this.picAgent.TabStop = false;
             // 
             // picLogo
             // 
@@ -101,6 +139,60 @@
             this.pnlNavigation.Name = "pnlNavigation";
             this.pnlNavigation.Size = new System.Drawing.Size(218, 352);
             this.pnlNavigation.TabIndex = 1;
+            // 
+            // picExit
+            // 
+            this.picExit.Image = ((System.Drawing.Image)(resources.GetObject("picExit.Image")));
+            this.picExit.Location = new System.Drawing.Point(3, 326);
+            this.picExit.Name = "picExit";
+            this.picExit.Size = new System.Drawing.Size(100, 19);
+            this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picExit.TabIndex = 1;
+            this.picExit.TabStop = false;
+            this.picExit.Click += new System.EventHandler(this.picExit_Click);
+            // 
+            // lblManageRental
+            // 
+            this.lblManageRental.AutoSize = true;
+            this.lblManageRental.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManageRental.Location = new System.Drawing.Point(51, 98);
+            this.lblManageRental.Name = "lblManageRental";
+            this.lblManageRental.Size = new System.Drawing.Size(93, 13);
+            this.lblManageRental.TabIndex = 9;
+            this.lblManageRental.Text = "Manage Rental";
+            // 
+            // picMnageRental
+            // 
+            this.picMnageRental.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picMnageRental.Image = ((System.Drawing.Image)(resources.GetObject("picMnageRental.Image")));
+            this.picMnageRental.Location = new System.Drawing.Point(54, 114);
+            this.picMnageRental.Name = "picMnageRental";
+            this.picMnageRental.Size = new System.Drawing.Size(90, 68);
+            this.picMnageRental.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMnageRental.TabIndex = 8;
+            this.picMnageRental.TabStop = false;
+            // 
+            // lblManageTicket
+            // 
+            this.lblManageTicket.AutoSize = true;
+            this.lblManageTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManageTicket.Location = new System.Drawing.Point(51, 11);
+            this.lblManageTicket.Name = "lblManageTicket";
+            this.lblManageTicket.Size = new System.Drawing.Size(92, 13);
+            this.lblManageTicket.TabIndex = 7;
+            this.lblManageTicket.Text = "Manage Ticket";
+            // 
+            // picManageTicket
+            // 
+            this.picManageTicket.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picManageTicket.Image = ((System.Drawing.Image)(resources.GetObject("picManageTicket.Image")));
+            this.picManageTicket.Location = new System.Drawing.Point(54, 27);
+            this.picManageTicket.Name = "picManageTicket";
+            this.picManageTicket.Size = new System.Drawing.Size(90, 59);
+            this.picManageTicket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picManageTicket.TabIndex = 6;
+            this.picManageTicket.TabStop = false;
+            this.picManageTicket.Click += new System.EventHandler(this.picManageTicket_Click);
             // 
             // btnReservationReport
             // 
@@ -168,98 +260,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Notifications:";
             // 
-            // picAgent
-            // 
-            this.picAgent.Image = ((System.Drawing.Image)(resources.GetObject("picAgent.Image")));
-            this.picAgent.Location = new System.Drawing.Point(3, 3);
-            this.picAgent.Name = "picAgent";
-            this.picAgent.Size = new System.Drawing.Size(100, 80);
-            this.picAgent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAgent.TabIndex = 1;
-            this.picAgent.TabStop = false;
-            // 
-            // lblAgentUsername
-            // 
-            this.lblAgentUsername.AutoSize = true;
-            this.lblAgentUsername.Location = new System.Drawing.Point(109, 5);
-            this.lblAgentUsername.Name = "lblAgentUsername";
-            this.lblAgentUsername.Size = new System.Drawing.Size(93, 13);
-            this.lblAgentUsername.TabIndex = 2;
-            this.lblAgentUsername.Text = "lblAgentUsername";
-            // 
-            // lblAgentId
-            // 
-            this.lblAgentId.AutoSize = true;
-            this.lblAgentId.Location = new System.Drawing.Point(109, 18);
-            this.lblAgentId.Name = "lblAgentId";
-            this.lblAgentId.Size = new System.Drawing.Size(54, 13);
-            this.lblAgentId.TabIndex = 3;
-            this.lblAgentId.Text = "lblAgentId";
-            // 
-            // picEditAgent
-            // 
-            this.picEditAgent.Image = ((System.Drawing.Image)(resources.GetObject("picEditAgent.Image")));
-            this.picEditAgent.Location = new System.Drawing.Point(112, 62);
-            this.picEditAgent.Name = "picEditAgent";
-            this.picEditAgent.Size = new System.Drawing.Size(59, 21);
-            this.picEditAgent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picEditAgent.TabIndex = 4;
-            this.picEditAgent.TabStop = false;
-            // 
-            // picManageTicket
-            // 
-            this.picManageTicket.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picManageTicket.Image = ((System.Drawing.Image)(resources.GetObject("picManageTicket.Image")));
-            this.picManageTicket.Location = new System.Drawing.Point(54, 27);
-            this.picManageTicket.Name = "picManageTicket";
-            this.picManageTicket.Size = new System.Drawing.Size(90, 59);
-            this.picManageTicket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picManageTicket.TabIndex = 6;
-            this.picManageTicket.TabStop = false;
-            this.picManageTicket.Click += new System.EventHandler(this.picManageTicket_Click);
-            // 
-            // lblManageTicket
-            // 
-            this.lblManageTicket.AutoSize = true;
-            this.lblManageTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManageTicket.Location = new System.Drawing.Point(51, 11);
-            this.lblManageTicket.Name = "lblManageTicket";
-            this.lblManageTicket.Size = new System.Drawing.Size(92, 13);
-            this.lblManageTicket.TabIndex = 7;
-            this.lblManageTicket.Text = "Manage Ticket";
-            // 
-            // picMnageRental
-            // 
-            this.picMnageRental.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picMnageRental.Image = ((System.Drawing.Image)(resources.GetObject("picMnageRental.Image")));
-            this.picMnageRental.Location = new System.Drawing.Point(54, 114);
-            this.picMnageRental.Name = "picMnageRental";
-            this.picMnageRental.Size = new System.Drawing.Size(90, 68);
-            this.picMnageRental.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picMnageRental.TabIndex = 8;
-            this.picMnageRental.TabStop = false;
-            // 
-            // lblManageRental
-            // 
-            this.lblManageRental.AutoSize = true;
-            this.lblManageRental.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManageRental.Location = new System.Drawing.Point(51, 98);
-            this.lblManageRental.Name = "lblManageRental";
-            this.lblManageRental.Size = new System.Drawing.Size(93, 13);
-            this.lblManageRental.TabIndex = 9;
-            this.lblManageRental.Text = "Manage Rental";
-            // 
-            // picExit
-            // 
-            this.picExit.Image = ((System.Drawing.Image)(resources.GetObject("picExit.Image")));
-            this.picExit.Location = new System.Drawing.Point(3, 326);
-            this.picExit.Name = "picExit";
-            this.picExit.Size = new System.Drawing.Size(100, 19);
-            this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picExit.TabIndex = 1;
-            this.picExit.TabStop = false;
-            this.picExit.Click += new System.EventHandler(this.picExit_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,16 +275,16 @@
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.pnlHeading.ResumeLayout(false);
             this.pnlHeading.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picEditAgent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAgent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.pnlNavigation.ResumeLayout(false);
             this.pnlNavigation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMnageRental)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picManageTicket)).EndInit();
             this.pnlNotification.ResumeLayout(false);
             this.pnlNotification.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAgent)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEditAgent)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picManageTicket)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMnageRental)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
             this.ResumeLayout(false);
 
         }

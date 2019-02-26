@@ -36,6 +36,7 @@ namespace BusReservtionSysWindowsForm
             btnNewBus.Hide();
             btnReservationReport.Hide();
             btnReserve.Hide();
+            
 
             //this.WindowState = FormWindowState.Maximized;
 
@@ -53,7 +54,9 @@ namespace BusReservtionSysWindowsForm
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            //this.Hide();
+            //Login login = new Login();
+            //login.Show();
         }
 
         private void picExit_Click(object sender, EventArgs e)
